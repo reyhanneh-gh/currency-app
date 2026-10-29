@@ -5,7 +5,7 @@ function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, res
                 Please enter the price of 1 dollar (USD) below.
             </p>
             <div className="w-fit h-10 flex justify-between items-center my-5 bg-gray-300 rounded-[10px]">
-                <input type="number" placeholder="example: 270" className="w-fit h-fit py-2.5 text-center text-black placeholder:text-gray-600 placeholder:text-center bg-none"
+                <input type="number" placeholder="example: 270" className="w-fit h-fit py-2.5 text-center text-black placeholder:text-gray-600 bg-none"
                     onChange={(e) => setRate(e.target.value)}
                     value={rate} />
                 <p className="w-fit h-fit text-blue-500 px-5 text-center">0000 Rials</p>
@@ -18,11 +18,11 @@ function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, res
             </p>
             {/* --------------------1 dollar rate input------------ */}
             <div className="w-full h-fit flex justify-center items-center relative my-5">
-                <p className="text-white font-bold h-fit w-fit text-[20px]">
+                <p className="text-white font-bold h-fit w-fit text-[20px] text-center">
                     {currency == "dollars ($)" ? "dollars ($)" : "rials (ريال)"}
                 </p>
                 <span onClick={currencyChange} className="changeBtn material-symbols-outlined mx-10 p-5 rounded-full bg-blue-500 text-white text-center text-[20px] border border-gray-700 hover:scale-[.9] hover:bg-blue-400 duration-300 cursor-pointer">sync_alt</span>
-                <p className="text-white font-bold h-fit w-fit text-[20px]">
+                <p className="text-white font-bold h-fit w-fit text-[20px] text-center">
                     {currency == "dollars ($)" ? "rials (ريال)" : "dollars ($)"}
                 </p>
             </div>
