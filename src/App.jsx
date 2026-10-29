@@ -4,7 +4,7 @@ import Converter from "./components/Converter"
 import Footer from "./components/Footer"
 
 function App() {
-  const [currency, setCurrency] = useState("dollars ($)")
+  const [currency, setCurrency] = useState("$")
   const [rate, setRate] = useState("")
   const [amount, setAmount] = useState("")
   const [result, setResult] = useState("")
@@ -13,10 +13,10 @@ function App() {
 
   function currencyChange() {
     setResult("")
-    if (currency == "dollars ($)") {
-      setCurrency("rials (ريال)")
+    if (currency == "$") {
+      setCurrency("ريال")
     } else {
-      setCurrency("dollars ($)")
+      setCurrency("$")
     }
   }
   // ---------------------calculation---------------------
@@ -30,7 +30,7 @@ function App() {
       setResult("Invalid amount")
       return
     }
-    if (currency === "dollars ($)") {
+    if (currency === "$") {
       setResult(amount * rate * 10000)
     } else {
       setResult(amount / rate)
