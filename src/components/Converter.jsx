@@ -6,8 +6,9 @@ function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, res
             </p>
             <div className="w-fit h-10 flex justify-between items-center my-5 bg-gray-300 rounded-[10px]">
                 <input type="number" placeholder="example: 270" className="w-40 h-fit py-2.5 text-center text-black placeholder:text-gray-600 placeholder:text-center  bg-none"
-                    value={rate} onChange={(e) => setRate(e.target.value)} />
-                    <p className="w-fit h-fit text-blue-500 px-5 text-center">0000 Rials</p>
+                    onChange={(e) => setRate(e.target.value)}
+                    value={rate} />
+                <p className="w-fit h-fit text-blue-500 px-5 text-center">0000 Rials</p>
             </div>
             <p className="w-full h-fit text-[18px] text-center text-white mb-2.5">
                 Now choose a direction and enter an amount.
@@ -28,7 +29,8 @@ function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, res
             {/* --------------------amount input------------------- */}
             <div className="w-full h-fit flex flex-wrap justify-center items-center relative my-5">
                 <input type="number" placeholder="enter the amount" className="w-40 h-fit p-2.5 bg-gray-300 rounded-[10px] text-center text-black placeholder:text-gray-600 placeholder:text-center"
-                    value={amount} onChange={(e) => setAmount(e.target.value)}
+                    onChange={(e) => setAmount(e.target.value)}
+                    value={amount}
                 />
                 <span className="w-full my-5 md:my-0 md:w-fit text-2xl text-white font-extrabold mx-10 text-center">=</span>
                 <div className="w-40 h-11 p-2.5 bg-blue-300 rounded-[10px] text-center text-black">

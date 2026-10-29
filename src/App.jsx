@@ -22,12 +22,18 @@ function App() {
   // ---------------------calculation---------------------
   function calculate() {
     setResult("")
-    if (currency == "dollars ($)") {
-      setResult(amount * rate * 10000)
-    } else if (currency == "rials (ريال)" && rate > 0) {
-      setResult((amount / rate) * 10000)
-    } else if (rate == 0) {
+    if (rate <= 0 || rate === "") {
       setResult("Invalid rate")
+      return
+    }
+    if (amount === "") {
+      setResult("Invalid amount")
+      return
+    }
+    if (currency === "dollars ($)") {
+      setResult(amount * rate * 10000)
+    } else {
+      setResult(amount / rate)
     }
     console.log("test");
 
