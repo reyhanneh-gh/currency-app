@@ -24,7 +24,7 @@ function Forms() {
 
             {/* --------------------calc button------------------- */}
             <div className="w-full h-fit flex justify-center mt-5">
-                <button className="calcBtn p-2.5 bg-blue-500 rounded-full text-center text-[20px] text-white border border-gray-700 hover:scale-[.9] hover:bg-blue-400 duration-300 cursor-pointer">Calculate</button>
+                <button className="calcBtn py-2.5 px-5 bg-blue-500 rounded-full text-center text-[20px] text-white border border-gray-700 hover:scale-[.9] hover:bg-blue-400 duration-300 cursor-pointer">Calculate</button>
             </div>
         </section>
     )
