@@ -1,4 +1,4 @@
-function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, result, calculate }) {
+function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, result, setResult, calculate }) {
     return (
         <section className="w-11/12 md:w-3/4 lg:w-2/3 h-fit flex flex-wrap justify-center items-center formBg rounded-[10px] py-10 px-2.5 my-5">
             {/* --------------------1 dollar rate input------------ */}
@@ -8,7 +8,10 @@ function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, res
             </p>
             <div className="w-fit h-12 flex justify-between items-center my-5 bg-gray-300 rounded-[10px]">
                 <input type="number" placeholder="example: 270" className="w-30 h-fit py-2.5 text-center text-black placeholder:text-gray-600 bg-none"
-                    onChange={(e) => setRate(e.target.value)}
+                    onChange={(e) => {
+                        setRate(e.target.value)
+                        setResult("")
+                    }}
                     value={rate} />
                 <p className="w-fit h-fit text-blue-500 px-2.5 text-center">0000 Rials</p>
             </div>
@@ -29,7 +32,10 @@ function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, res
                         </p>
                     </div>
                     <input type="number" placeholder="enter the amount" className="w-40 h-fit p-2.5 bg-none text-center text-black placeholder:text-gray-600 placeholder:text-center"
-                        onChange={(e) => setAmount(e.target.value)}
+                        onChange={(e) => {
+                            setAmount(e.target.value)
+                            setResult("")
+                        }}
                         value={amount}
                     />
                 </div>
