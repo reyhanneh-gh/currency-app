@@ -5,7 +5,7 @@ function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, res
                 Please enter the price of 1 dollar (USD) below.
             </p>
             <div className="w-fit h-10 flex justify-between items-center my-5 bg-gray-300 rounded-[10px]">
-                <input type="number" placeholder="example: 270" className="w-40 h-fit py-2.5 text-center text-black placeholder:text-gray-600 placeholder:text-center  bg-none"
+                <input type="number" placeholder="example: 270" className="w-fit h-fit py-2.5 text-center text-black placeholder:text-gray-600 placeholder:text-center bg-none"
                     onChange={(e) => setRate(e.target.value)}
                     value={rate} />
                 <p className="w-fit h-fit text-blue-500 px-5 text-center">0000 Rials</p>
