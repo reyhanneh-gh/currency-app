@@ -35,7 +35,7 @@
 [مشاهده نسخه آنلاین پروژه](https://currency-ag5vj2k7m-reyhanneh-ghs-projects.vercel.app/)
 
 ## 🌀 نسخه TypeScript
-علاوه بر نسخه JavaScript، نسخه دیگری از این پروژه نیز با استفاده از TypeScript و React پیاده‌سازی شده که از لینک زیر می‌تونید مشاهده کنید.
+علاوه بر نسخه JavaScript، نسخه دیگری از این پروژه نیز با استفاده از TypeScript و React با هدف یادگیری و تمرین TypeScript پیاده‌سازی شده که از لینک زیر می‌تونید مشاهده کنید.
 
 [مشاهده ریپازیتوری نسخه TypeScript](https://github.com/reyhanneh-gh/currency-app-typescript)
 
