@@ -37,8 +37,7 @@
 ## 🌀 نسخه TypeScript
 علاوه بر نسخه JavaScript، نسخه دیگری از این پروژه نیز با استفاده از TypeScript و React پیاده‌سازی شده که از لینک زیر می‌تونید مشاهده کنید.
 
-[مشاهده ریپازیتوری نسخه TypeScript]((https://github.com/reyhanneh-gh/currency-app-typescript
-
+[مشاهده ریپازیتوری نسخه TypeScript](https://github.com/reyhanneh-gh/currency-app-typescript)
 
 
 ### 📸 اسکرین‌شات  
