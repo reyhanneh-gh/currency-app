@@ -13,7 +13,7 @@ function App() {
 
   function currencyChange() {
     setResult("")
-    if (currency == "$") {
+    if (currency === "$") {
       setCurrency("ريال")
     } else {
       setCurrency("$")

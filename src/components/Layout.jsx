@@ -28,7 +28,7 @@ function Layout({ currency, currencyChange, rate, setRate, amount, setAmount, re
                 <div className="w-fit h-fit overflow-hidden bg-gray-300 rounded-[10px] flex justify-between items-center py-0.5 px-2.5">
                     <div className="size-10 flex justify-center items-center bg-blue-900 rounded-full">
                         <p className="text-white font-bold text-[15px] text-center">
-                            {currency == "$" ? "$" : "ريال"}
+                            {currency === "$" ? "$" : "ريال"}
                         </p>
                     </div>
                     <input type="number" placeholder="enter the amount" className="w-40 h-fit p-2.5 bg-none text-center text-black placeholder:text-gray-600 placeholder:text-center"
@@ -47,7 +47,7 @@ function Layout({ currency, currencyChange, rate, setRate, amount, setAmount, re
                 <div className="w-fit h-fit overflow-hidden bg-blue-300 rounded-[10px] flex justify-between items-center py-0.5 px-2.5">
                     <div className="size-10 flex justify-center items-center bg-blue-900 rounded-full">
                         <p className="text-white font-bold text-[15px] text-center">
-                            {currency == "$" ? "ريال" : "$"}
+                            {currency === "$" ? "ريال" : "$"}
                         </p>
                     </div>
                     <div className="w-40 h-11 p-2.5 text-center text-black">
