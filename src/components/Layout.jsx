@@ -1,4 +1,4 @@
-function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, result, setResult, calculate }) {
+function Layout({ currency, currencyChange, rate, setRate, amount, setAmount, result, setResult, calculate }) {
     return (
         <section className="w-11/12 md:w-3/4 lg:w-2/3 h-fit flex flex-wrap justify-center items-center formBg rounded-[10px] py-10 px-2.5 my-5">
             {/* --------------------1 dollar rate input------------ */}
@@ -65,4 +65,4 @@ function Forms({ currency, currencyChange, rate, setRate, amount, setAmount, res
         </section>
     )
 }
-export default Forms
+export default Layout
