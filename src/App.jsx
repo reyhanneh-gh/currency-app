@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Header from "./components/Header"
-import Converter from "./components/Converter"
+import Layout from "./components/Layout"
 import Footer from "./components/Footer"
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
     <div className="w-full min-h-screen flex flex-wrap justify-center content-between bg-gray-800">
       <Header />
 
-      <Converter
+      <Layout
         currency={currency}
         currencyChange={currencyChange}
         rate={rate}
